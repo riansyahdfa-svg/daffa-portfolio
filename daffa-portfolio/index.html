@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daffa Portofolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&family=Jost:wght@200;300;400;500;600&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body class="page-home">
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-name">Daffa Portofolio</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- BACKGROUND -->
+  <div class="bg-scene">
+    <div class="bg-orb bg-orb1"></div>
+    <div class="bg-orb bg-orb2"></div>
+    <div class="bg-orb bg-orb3"></div>
+    <canvas class="bg-particles" id="particles"></canvas>
+    <div class="bg-grain"></div>
+    <div class="bg-vignette"></div>
+    <div class="bg-lines"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-avatar" id="brandAvatar">
+        <img src="assets/foto.jpg" alt="Daffa"
+             onerror="this.style.display='none';document.getElementById('brandInit').style.display='flex'"/>
+        <span class="brand-init" id="brandInit">DR</span>
+      </div>
+      <div class="brand-text">
+        <span class="brand-title">Daffa Portofolio</span>
+        <span class="brand-sub">Muhammad Daffa Riansyah</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link active" data-page="home">Home</a></li>
+      <li><a href="biodata.html" class="nav-link" data-page="biodata">Biodata</a></li>
+      <li><a href="kontak.html" class="nav-link" data-page="kontak">Kontak</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav-mobile" id="navMobile">
+    <div class="nm-inner">
+      <a href="index.html" class="nm-link active">Home</a>
+      <a href="biodata.html" class="nm-link">Biodata</a>
+      <a href="kontak.html" class="nm-link">Kontak</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <main class="hero" id="hero">
+    <div class="hero-wrap">
+
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-tag" data-aos="fade-up" data-aos-delay="200">
+          <span class="tag-dot"></span>
+          <span>Teknik Informatika · UIN SGD Bandung</span>
+        </div>
+
+        <h1 class="hero-heading" data-aos="fade-up" data-aos-delay="350">
+          <span class="hh-line1">Muhammad</span>
+          <span class="hh-line2"><em>Daffa</em></span>
+          <span class="hh-line3">Riansyah</span>
+        </h1>
+
+        <p class="hero-nick" data-aos="fade-up" data-aos-delay="480">
+          Akrab dipanggil <strong>Dapa</strong> ·
+        </p>
+
+        <div class="hero-motto" data-aos="fade-up" data-aos-delay="580">
+          <div class="motto-deco">✦</div>
+          <p class="motto-text">
+            "WORK SMARTER and<br>
+            <em>PRAY HARD</em>"
+          </p>
+        </div>
+
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="700">
+          <a href="biodata.html" class="btn-main">
+            <span>Kenalan Lebih Jauh yuk</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="kontak.html" class="btn-line">Kontak Saya</a>
+        </div>
+
+        <!-- Stats row -->
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="820">
+          <div class="stat-item">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-lbl">Semester</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-lbl">Halaman Web</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="25">0</span>
+            <span class="stat-lbl">Angkatan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — Photo -->
+      <div class="hero-right" data-aos="fade-left" data-aos-delay="300">
+        <div class="photo-rig">
+          <div class="photo-ring photo-ring1"></div>
+          <div class="photo-ring photo-ring2"></div>
+          <div class="photo-ring photo-ring3"></div>
+          <div class="photo-frame">
+            <img src="assets/foto.jpg" alt="Muhammad Daffa Riansyah"
+                 class="photo-img" id="heroPhoto"
+                 onerror="this.style.display='none';document.getElementById('photoFb').style.display='flex'"/>
+            <div class="photo-fb" id="photoFb">
+              <span class="pfb-init">DR</span>
+              <span class="pfb-hint">Taruh foto.jpg<br>di folder assets/</span>
+            </div>
+            <div class="photo-shine"></div>
+          </div>
+          <div class="photo-badge pb1">
+            <span class="pb-emoji">🎓</span>
+            <div>
+              <div class="pb-val">UIN SGD</div>
+              <div class="pb-lbl">Bandung</div>
+            </div>
+          </div>
+          <div class="photo-badge pb2">
+            <span class="pb-emoji">💻</span>
+            <div>
+              <div class="pb-val">Semester II</div>
+              <div class="pb-lbl">Informatika</div>
+            </div>
+          </div>
+          <div class="photo-badge pb3">
+            <span class="pb-emoji">⚡</span>
+            <div>
+              <div class="pb-val">Angkatan</div>
+              <div class="pb-lbl">2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end hero-wrap -->
+
+    <!-- Scroll hint -->
+    <div class="scroll-cue" id="scrollCue">
+      <div class="sc-mouse">
+        <div class="sc-wheel"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">Daffa Portofolio</span>
+      <span class="footer-copy">© 2025 Muhammad Daffa Riansyah · HTML, CSS & JS</span>
+      <a href="#hero" class="footer-top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
