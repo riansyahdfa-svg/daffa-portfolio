@@ -11,19 +11,7 @@ daffa-portfolio/
 ├── js/
 │   └── main.js      ← Semua interaktivitas
 └── assets/
-    └── foto.jpg     ← ★ TARUH FOTO KAMU DI SINI
+    └── foto.jpg     ← ★ Foto
 ```
 
-## Cara Pasang Foto
-1. Simpan foto kamu dengan nama **foto.jpg**
-2. Taruh di folder **assets/**
-3. Refresh browser → foto langsung muncul!
 
-## Cara Buka di Browser
-Double-click file **index.html** → otomatis terbuka di browser
-
-## Cara Edit di VSCode
-1. Buka VSCode
-2. File → Open Folder → pilih folder **daffa-portfolio**
-3. Edit sesuai kebutuhan
-4. Ctrl+S untuk save → refresh browser
